@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "311291728565",
+    "project_id": "nazorecapp",
+    "storage_bucket": "nazorecapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311291728565:android:1c8ce27f21752d5cd3a4fc",
+        "android_client_info": {
+          "package_name": "net.tanitanin.nazo_rec_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311291728565-sr6fd9jjscnrh9hffp5t9hcieanmcv90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpvITxvMBJIQHG0x3DR7el2YBpO6c-SSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311291728565-sr6fd9jjscnrh9hffp5t9hcieanmcv90.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "311291728565-on3lt18ov4r44u2g7apmmmdg6qounsaj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.tanitanin.nazoRecApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
