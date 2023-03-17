@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:nazo_rec_app/src/pages/memo_detail_page.dart';
 
 import '../models/memo.dart';
 
@@ -54,6 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
           return ListTile(
             title: Text(memoList[index].title),
             subtitle: Text(memoList[index].details),
+            onTap : () {
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => MemoDetailPage(memoList[index])));
+            },
           );
         },
       ),
