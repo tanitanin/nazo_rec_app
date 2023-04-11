@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "nazo_rec_app (dev)",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define-from-file=flavor/dev.json"
+            ]
+        },
+        {
+            "name": "nazo_rec_app (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "args": [
+                "--dart-define-from-file=flavor/stg.json"
+            ]
+        },
+        {
+            "name": "nazo_rec_app (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "args": [
+                "--dart-define-from-file=flavor/prd.json"
+            ]
+        }
+    ]
+}

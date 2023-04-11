@@ -1,0 +1,6 @@
+{
+    "flavor": "dev",
+    "appName": "(Dev)NazoRec",
+    "appId": "net.tanitanin.nazorec",
+    "appIdSuffix": ".dev"
+}
