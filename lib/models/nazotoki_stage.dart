@@ -9,6 +9,7 @@ class NazotokiStage with _$NazotokiStage {
   const factory NazotokiStage({
     required int id,
     required int eventId,
+    bool? isSceeded,
     required DateTime startTime,
     required DateTime createdAt,
   }) = _NazotokiStage;
