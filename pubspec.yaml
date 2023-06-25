@@ -41,6 +41,8 @@ dependencies:
   flutter_riverpod: ^2.3.4
   firebase_auth: ^4.4.0
   google_sign_in: ^6.1.0
+  freezed_annotation: ^2.2.0
+  json_annotation: ^4.8.1
 
 dev_dependencies:
   flutter_test:
@@ -55,6 +57,10 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+
+  freezed: ^2.3.5
+  build_runner: ^2.4.5
+  json_serializable: ^6.7.0
 
 # The following section is specific to Flutter packages.
 flutter:

@@ -1,8 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/nazotoki_entry.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../models/nazotoki_event.dart';
+
+final homeScreenProvider = Provider((ref) => HomeScreenProvider());
 
 class HomeScreenProvider {
-  List<NazotokiEntry> nazoEntryList = [];
+  List<NazotokiEvent> nazoEntryList = [];
   int count = 0;
 
   Future<void> fetchNaotokiEntries() async {
@@ -10,18 +13,21 @@ class HomeScreenProvider {
         await FirebaseFirestore.instance.collection('/NazotokiEntry').get();
     final docs = memoCollection.docs;
     for (var doc in docs) {
-      NazotokiEntry fetchedNazotokiEntries = NazotokiEntry(
+      NazotokiEvent fetchedNazotokiEvents = NazotokiEvent(
         id: doc.data()['id'],
         name: doc.data()['name'],
-        address: doc.data()['address'],
+        publisher: doc.data()['url'],
+        place: doc.data()['place'],
+        eventType: doc.data()['eventType'],
         description: doc.data()['description'],
         imageUrl: doc.data()['imageUrl'],
-        lat: doc.data()['lat'],
-        lng: doc.data()['lng'],
-        url: doc.data()['url'],
-        createdDate: doc.data()['createdDate'],
+        eventUrl: doc.data()['eventUrl'],
+        elapseTime: doc.data()['elapseTime'],
+        isRepeatable: doc.data()['isRepeatable'],
+        createdAt: doc.data()['createdAt'],
+        updatedAt: doc.data()['updatedAt'],
       );
-      nazoEntryList.add(fetchedNazotokiEntries);
+      nazoEntryList.add(fetchedNazotokiEvents);
     }
   }
 }
